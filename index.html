@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<div class="footer">
+    <div class="shop">
+        <a href="shop.html">SHOP</a>
+
+    </div>
+    <div class="admin">
+        <a href="index.html"> ADMIN </a>
+
+    </div>
+</div>
+
+
+<div class="rectangle">
+    <div class="add">
+        <div class="form-title">
+            Add new products
+        </div>
+        <form class="input-row">
+            <label for="id-add">Id:</label>
+            <input type="number" name="id" id="id-add">
+            <label for="count-add">Count:</label>
+            <input type="text" name="count" id="count-add" placeholder="Name">
+            <label for="name-add">Name:</label>
+            <input type="text" name="name" id="name-add" placeholder="Name">
+            <label for="price-add">Price:</label>
+            <input type="number" name="price" id="price-add" placeholder="Price">
+            <label for="photo-add">Photo:</label>
+            <input type="text" name="photo" id="photo-add" placeholder="Photo">
+        </form>
+        <button class="m-bttn" id="add-button">add</button>
+    </div>
+
+    <div class="edit">
+        <div class="form-title">
+            Edit products
+        </div>
+        <form class="input-row">
+            <label for="id-edit">Id:</label>
+            <input type="number" name="id" id="id-edit">
+            <label for="count-edit">Count:</label>
+            <input type="text" name="count" id="count-edit" placeholder="Name">
+            <label for="name-edit">Name:</label>
+            <input type="text" name="name" id="name-edit" placeholder="Name">
+            <label for="price-edit">Price:</label>
+            <input type="number" name="price" id="price-edit" placeholder="Price">
+            <label for="photo-edit">Photo:</label>
+            <input type="text" name="photo" id="photo-edit" placeholder="Photo">
+
+        </form>
+        <button class="m-bttn" id="editBtn">edit</button>
+    </div>
+</div>
+
+<div class="delete">
+    <div class="form-title">
+        Delete
+    </div>
+    <form class="input-row">
+
+        <label for="id-delete">Id:</label>
+        <input type="number" name="id-delete" id="id-delete">
+    </form>
+    <button class="m-bttn" id="deleteBtn">del</button>
+</div>
+<body>
+<div class="all-product-table">
+    <div class="form-title">
+        Shop products
+    </div>
+    <button class="m-bttn" id="getAllBtn">get</button>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Count</th>
+            <th>Photo</th>
+        </tr>
+
+        </thead>
+        <tbody id="tableData"></tbody>
+    </table>
+</div>
+</body>
+</div>
+</div>
+<script src="main.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

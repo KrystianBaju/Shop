@@ -1,0 +1,19 @@
+@mixin font($size :14px,$color :#000,$weight:normal,$style:normal,$family:sans-serif) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight;
+  font-style: $style;
+  font-family: $family;
+}
+
+@mixin button($color :#000, $cursor :allowed,$padding : 15px 32px,
+    $align-text : center,$font-size: 16px,$opacity : 0.6,$margin : 4px 2px ) {
+
+  background-color: $color;
+  cursor: $cursor;
+  padding: $padding;
+  align-text: $align-text;
+  font-size: $font-size;
+  opacity: $opacity;
+  margin: $margin;
+}

@@ -1,0 +1,36 @@
+@import "mixins";
+
+
+button{
+
+  @include button(rgb(206, 206, 206))
+
+}
+
+button{
+
+  &:hover{
+
+    @include button(rgb(138, 125, 125))
+
+  }
+
+  &:active{
+
+    @include button(rgb(138, 125, 125))
+  }
+
+  &:focus{
+
+    @include button(rgb(150, 127, 127)5, 56, 56)
+
+  }
+
+  &:disabled{
+
+    @include button(rgb(206, 206, 206), not-allowed)
+
+  }
+
+
+}

@@ -1,0 +1,83 @@
+@import "ul-kit/button";
+rectangle {
+  display: flex;
+  flex-direction: row;
+  /*
+  padding: 0px 500px                                                                                                                                                                                                                                                                                                                                       0px 0px;
+  */
+
+
+}
+
+
+.list-rectangle {
+  margin: 10px;
+  display: flex;
+  flex: 1;
+  background-color: royalblue;
+  border-radius: 15px;
+  border: solid white;
+
+}
+
+.form {
+  margin: 10px;
+  flex: 2;
+  border: solid white;
+  border-radius: 15px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.form input {
+}
+
+#confirm {
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  margin-top: 40px;
+  background-color: darkred;
+  color: white;
+}
+
+
+.input-row label {
+
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.rectangle2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 15px;
+  border: 2px solid #fff;
+  height: 700px;
+  margin: 10px;
+  background-color: beige;
+}
+
+.list-box {
+  background-color: wheat;
+  border-radius: 15px;
+  width: 70%;
+  height: 100%;
+  justify-content: center;
+  border: 2px solid #fff;
+  margin: 10px;
+
+
+}
