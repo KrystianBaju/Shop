@@ -1,22 +1,27 @@
 const Api = function () {
     this.headers = new Headers({
+        'application': 'x-www-form-urlencoded',
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type':'application/x-www-form-urlencoded',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers' : 'access-control-allow-origin'
     })
 };
 
-Api.prototype.buildUrl = function (id) {
-    return "http://localhost:3000/db/games/" + id;
+Api.prototype.buildUrl = function (id,resource) {
+    console.log("http://localhost:3000/games/"+resource+"/"+id);
+    return "http://localhost:3000/games/"+resource+"/"+id;
 };
 
 
+
 Api.prototype.post = function (id, data) {
-    alert("Dodano produkt o id :" +id )
-    const urlPost = this.buildUrl(id);
-    return fetch(urlPost, {
+    alert("Dodano gre o id :" +id )
+    const urlPost = this.buildUrl(id,"create");
+      return fetch(urlPost, {
         method: 'POST',
         body: JSON.stringify(data),
-        headers: this.headers
+        headers: this.headers,
     })
 };
 
@@ -34,7 +39,7 @@ Api.prototype.get = function (id) {
         )
 };
 Api.prototype.getAll = function () {
-    const urlPost = "http://localhost:3000/db/games";
+    const urlPost = "http://localhost:3000/games";
 
     return fetch(urlPost,
         {
